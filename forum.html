@@ -3,16 +3,29 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>Order Entry Form</title>
+<link rel="stylesheet" type="text/css" href="orderentry.css" />
 </head>
 
 <body>
+<div id="container">
+	<h1>ORDER ENTRY FORM</h1>
+</div>
 <div id="form">
 	<form>
 		<table id="userinput">
-			<tr><td>Name:</td> <td><input size=26 type="text" name="name"></td></tr>
-			<tr><td>Email:</td> <td><input size=26 type="text" name="email"></td></tr>
-			<tr><td>Experience:</td> <td><textarea type="textarea" name="experience"></textarea></td></tr>
+			<tr><td>Employee</td> <td><input size=26 type="text" name="employee"></td></tr>
+			<tr><td>Order Number </td> <td><input size=26 type="text" name="ordernumber"></td></tr>
+			<tr><td>Date </td> <td><input size=26 type="text" name="date"></td></tr>
+			<tr><td>Address </td> <td><textarea type="textarea" name="address"></textarea></td></tr>
+			Customer
+				<select>
+			  		<option value="adventureworks">Adventure Works</option>
+			  		<option value="seabeast">Seabeast Studios</option>
+			  		<option value="ofwgka">OFWGKA</option>
+			 		<option value="companyinc">Company inc.</option>
+				</select>
 		</table>
-				<input type="submit" value="Apply Now">
-
+				<input type="submit" value="Save"/>
+				<input type="button" onClick="window.print()" value="Print"/>
 	</form>
+	</html>
